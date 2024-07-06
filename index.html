@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"   type="text/css" href="style.css">
+</head>
+
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./assets/images/TestLogo.png" alt="Tech care">
+        </div>
+
+        <div class="links">
+            <ul>
+                <li class="items"><span><img src="./assets/icons/home-icon.png"/></span><a href="">Overview</a></li>
+                <li class="items active-patient"><span><img src="./assets/icons/patient.png"/></span><a href="">Patients</a></li>
+                <li class="items"><span><img src="./assets/icons/schedule-icon.png"/></span><a href="">Schedule</a></li>
+                <li class="items"><span><img src="./assets/icons/message-icon.png"/></span><a href="">Message</a></li>
+                <li class="items"><span><img src="./assets/icons/transaction-icon.png"/></span><a href="">Transactions</a></li>
+            </ul>
+        </div>
+
+        <div class="user-profile">
+            <div class="user-profile-inner">
+                <img src="./assets/images/senior-woman.png" alt="senior woman doctor">
+                <div class="info">
+                    <span>Dr.Jose Simmons</span>
+                  <small>General Practioner</small>
+                </div>
+            </div>
+
+            <div class="icon-settings">
+                <img src="./assets/icons/settings.png" class="img1"/>
+                <img src="./assets/icons/more-vert.png" class="img2"/>
+            </div>
+
+        </div>
+
+    </nav>
+</header>
+
+
+
+<main>
+    
+    <div class="card">
+
+        <div class="search-bar">
+            <p>Patients</p>
+            <img src="./assets/icons/search.png"/>
+        </div>
+
+        <div class="patient-list" id="patient-list">
+            
+        </div>
+        
+    </div>
+
+    <div class="dashboard">
+        <div class="dashboard-contents">
+            <h2>Diagnosis History</h2>
+
+        <div class="container-chart">
+            <div class="container-bloodpressurechart">
+                <canvas id="bloodPressureChart"></canvas>
+            </div>
+            <div class="analysis" id="analysis">
+          
+            </div>
+          </div>
+          
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        </div>
+
+        <div class="rate-level" id="rate-level">
+            <div id="respiratory-rate" class="respiratory-rate"></div>
+            <div id="temperature-level" class="tenperature-level"></div>
+            <div id="heart-rate" class="heart-rate"></div>
+          </div>
+    </div>
+    <div class="card">
+        <div class="patient-profile" id="patient-details"></div>
+    </div>
+</main>
+
+
+
+
+
+
+</body>
+
+<script src="script.js"></script>
+</html>
